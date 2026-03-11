@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: linear-gradient (0deg, transparent, rgb(184,184,184,.2))
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f2025;
+    font-family: 'Poppins', serif;
+}
+
+.book {
+    width: 92%;
+    height: 90%;
+    /* border: 1px solid white; */
+    display: flex;
+}
+
+.book .left, .right {
+    width: 80%;
+    position: relative;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.book .left {
+    width: 20%;
+    background: #2e3037;
+}
+
+.book .left img {
+    width: 100%;
+    height: 65%;
+}
+
+.book .left .play {
+    position: relative;
+    left: 44%;
+    top: -25px;
+    background: #fd6565;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0px 0px 20px red;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.book .left .play:hover {
+    transform: rotate(360deg);
+}
+
+.cont {
+    color: white;
+    padding: 0 20px;
+}
+
+.cont h6 {
+    font-size: 13px;
+}
+
+.cont p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.right {
+    padding: 10px 40px;
+    background: unset;
+}
+
+.right::before{
+    position: absolute;
+    content: '';
+    width: 93%;
+    height: 250px;
+    /* border: 1px solid white; */
+    background: url(https://www.brooklyncomicshop.com/BCS/wp-content/uploads/2019/05/Avengers-Endgame-Movie-Review-Pic-7-Brooklyn-Comic-Shop.jpg)no-repeat center -60px/cover;
+    z-index: -10;
+    border-radius: 20px;
+}
+
+.right::after {
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 200px;
+    /* border: 1px solid white; */
+    top: 0;
+    background: linear-gradient(0deg,transparent, #1f2025);
+    z-index: -10;
+    border-radius: 20px;
+}
+
+.right .head_time {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.book .right .head_time::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    right: -25px;
+    /* background: linear-gradient(90deg,transparent,#1f2025); */
+    z-index: -9px;
+}
+
+.book .right .head_time::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    left: -25px;
+    background: linear-gradient(270deg,transparent,#1f2025);
+    z-index: -9;
+}
+
+.head_time h1 {
+    color: white;
+    font-weight: 600;
+}
+
+.time {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.time h6 {
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.time h6 i {
+    margin-right: 5px;
+}
+
+.time button {
+   padding: 4px 10px;
+   border-radius: 10px;
+   border: 2px solid red;
+   color: white;
+   background: none;
+   font-size: 11px;
+   cursor: pointer;
+   font-weight: 600;
+   transition: .3s linear;
+}
+
+.time button:hover {
+   background: red;
+}
+
+.date_type {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date_type .left_card , .right_card {
+    width: 45%;
+    /* border: 1px solid white; */
+}
+
+.date_type::before {
+    content: '';
+    position: absolute;
+    width: 102%;
+    height: 210px;
+    left: -15px;
+    top: 0;
+    background: linear-gradient(180deg, transparent, #1f2025);
+    z-index: -9;
+}
+
+.title {
+    color:white;
+}
+.card_month {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-top: 1px solid rgb(184, 184, 184,.2);
+    padding: 5px 0px;
+}
+
+.card_month::-webkit-scrollbar {
+    height: 3px;
+    background: 1px solid rgb(184, 184, 184,.2);
+}
+.card_month::-webkit-scrollbar-thumb {
+    height: 3px;
+    background: 1px solid rgb(184, 184, 184,.5);
+}
+
+.book .right .card_month li {
+    list-style: none;
+    color: white;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.book .right .card_month li h6:nth-child(2) {
+    background: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: .3 linear;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.book .right .card_month li h6:nth-child(2):hover {
+    background: red;
+}
+
+.book .right .date_type .right_card li h6:nth-child(2) {
+    border-radius: 8px;
+    width: unset;
+    height: unset;
+    padding: 1px 5px 0 5px;
+}
+
+
+/* JS Active Date Class */
+.h6_active {
+    background: red !important;
+}
+
+/* Screen Start */
+.screen {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-top: 3px solid red;
+    margin-top: 50px;
+    border-radius: 20%;
+    overflow: hidden;
+    box-shadow: inset 0px 10px 20px var(--color);
+    text-align: center;
+    padding-top: 15px;
+    color:white;
+    letter-spacing: 5px;
+    font-size: 12px;
+    /* display: none; */
+}
+
+.book .right .screen::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(184, 184, 184, .5);
+    top: -20px;
+    left: 0;
+}
+
+.book .right .chair {
+    width: 95%;
+    /* border: 1px solid white; */
+    margin: auto;
+    /* display: none; */
+}
+
+.book .right .chair .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.book .right .chair .row li {
+    position: relative;
+    width: 25px;
+    height: 15px;
+    background: rgb(184, 184, 184,.3);
+    list-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s linear;
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    color: white; 
+    font-weight: 600;
+}
+
+.book .right .chair .row li::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 5px;
+   background: rgb(184, 184, 184,.1);
+   bottom: -8px;
+   border-radius: 10px;
+}
+
+.book .right .chair .row li:hover {
+    background: greenyellow;
+    color: black;
+}
+
+.book .right .chair .row li:nth-child(6) {
+    margin-right: 20px;
+}
+
+.book .right .chair .row li:nth-last-child(6) {
+    margin-left: 20px;
+}
+.book .right .chair .row span {
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+/* Javescript class colors */
+.book .right .chair .booked {
+    background: red !important;
+}
+.book .right .chair .selected {
+    background: greenyellow !important;
+    color: black !important;
+}
+
+.book .right .details {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none */
+}
+
+.book .right .details_chair {
+    display: flex;
+    align-items: center;
+}
+.book .right .details_chair li {
+    position: relative;
+    list-style: none;
+    border-radius: 5px;
+    transition: .3s linear;
+    margin:0 25px;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(184, 184, 184,.3);
+}
+.book .right .details_chair li::before {
+   position: absolute;
+   content: '';
+   width: 20px;
+   height: 15px;
+   background: rgb(184, 184, 184,.3);
+   border-radius: 5px;
+   left: -30px;
+   top: 2px;
+   transition: .3s linear;
+}
+.book .right .details_chair li::after {
+   position: absolute;
+   content: '';
+   width: 20px;
+   height: 4px;
+   background: rgb(184, 184, 184,.1);
+   border-radius: 10px;
+   left: -30px;
+   bottom: -5px; 
+   transition: .3s linear;
+}
+.book .right .details_chair li:nth-child(2):before {
+   background: red;
+}
+.book .right .details_chair li:nth-child(2):after {
+   background: red;
+}
+.book .right .details_chair li:nth-child(3):before {
+   background: greenyellow;
+}
+.book .right .details_chair li:nth-child(3):after {
+   background: greenyellow;
+}
+
+.book .right video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 103%;
+    height: 100%;
+    z-index: -8;
+    display: none;
+}
+
+.book .right .book_tic {
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    padding: 8px 9.5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #fd6565;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s linear;
+    display: none;
+}
+
+.book .right .book_tic:hover {
+    color: black;
+    
+}
+
+.book .right .ticket {
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid white; */
+    margin-top: 20px;
+    overflow: auto;
+    display: none;
+}
+.book .right .ticket::-webkit-scrollbar {
+    display: none;
+}
+
+.book .right .ticket .tic {
+    width: 100%;
+    height: 215px;
+    display: flex;
+    overflow: hidden;
+    /* border: 1px solid white; */
+    margin-top: 15px;
+}
+
+.book .right .ticket .tic .barcode , .tic_details {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    position: relative;
+}
+.book .right .ticket .tic .barcode {
+    width: 300px;
+    padding: 0 20px;
+    background: white;
+}
+
+.book .right .ticket .tic .tic_details {
+    background: url(https://www.brooklyncomicshop.com/BCS/wp-content/uploads/2019/05/Avengers-Endgame-Movie-Review-Pic-7-Brooklyn-Comic-Shop.jpg)no-repeat center -10px/cover;
+}
+
+.book .right .ticket .tic .barcode .card {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 10px;
+}
+
+.book .right .ticket .tic .barcode .card:nth-child(1) {
+   margin-top: 15px;
+}
+.book .right .ticket .tic .barcode .card h6 {
+   width: 60%;
+   text-align: left;
+   font-weight: 600;
+}
+.book .right .ticket .tic .barcode .card h6:nth-child(1) {
+   width: 40%;
+}
+.book .right .ticket .tic .barcode h5 {
+   width: 100%;
+   text-align: center;
+}
+.type {
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    font-weight: 600;
+    color: white;
+}
+
+.pvr {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    font-weight: 600;
+    color: skyblue;
+}
+.pvr span {
+    color: white;
+}
+
+.tic_details h1 {
+    color: white;
+    position: absolute;
+    left: 20px;
+    bottom: 80px;
+}
+
+.seat_det {
+    color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 8px;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(270deg,transparent,rgb(0,0,0,.3));
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+.seat_det .seat_cr{
+   width: 100px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-items: center;
+   flex-direction: column;
+   color: white;
+}
+.seat_det .seat_cr h6:nth-child(1) {
+   font-size: 11px;
+   font-weight: 600;
+}
+.seat_det .seat_cr h6:nth-child(2) {
+   font-size: 20px;
+   font-weight: 800;
+}
+.seat_det .seat_cr h6:nth-child(2)  sub{
+   font-size: 11px;
+   font-weight: 600;
+}
+

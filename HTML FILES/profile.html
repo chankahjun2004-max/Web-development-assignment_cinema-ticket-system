@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="../CSS FILES/style.css">
+    <link rel="stylesheet" href="../CSS FILES/login.css">
+    <link rel="stylesheet" href="../CSS FILES/profile.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="../JS FILES/login_register.js"></script>
+    <script src="../JS FILES/AddToCart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <header>
+        <a href="Homepage1.html" class="logo">
+            <i class='bx bxs-movie'></i>Mr.CK
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="Homepage1.html" >Home</a></li>
+            <li><a href="FnB.html">FnB</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="profile.html" class="home-active">Profile</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+        <button onclick="logout()" class="btn">logout</button>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Account Details</h2>
+            <form action="#">
+                <div class="form-group">
+                    <h3>Account Username</h3>
+                    <div class="detail-container"><script>document.write(localStorage.getItem("name"));</script></div>
+                </div>
+                <div class="form-group">
+                    <h3>Email</h3>
+                    <div class="detail-container"><script>document.write(localStorage.getItem("email"));</script></div>
+                </div> 
+                <div class="form-group">
+                    <h3>Password</h3>
+                    <div class="detail-container"><script>document.write(localStorage.getItem("password"));</script></div>
+                </div> 
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Your Order : </h2>
+            <h3><ul id="old-order-list"></ul></h3> <!-- List to display old orders -->
+            
+        
+        </div>
+    </div>
+
+    <div id="user_bookings" class="booking-card">
+        <div class="card">
+            
+            <h1>Your Movie Order:</h1>
+
+        </div>
+    </div>
+    <br>
+    <button onclick="pickup()" class="anothercard">Pick Up</button>
+    
+
+    <script src="../JS FILES/profile.js"></script>
+    
+</body>
+</html>

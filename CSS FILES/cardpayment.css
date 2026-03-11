@@ -1,0 +1,143 @@
+.payment-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 360px;
+  min-height: 100%;
+  background-image: linear-gradient(119deg, #04042f, #1e3332);
+}
+
+.payment-form form {
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  box-shadow: 0 5px 10px black;
+  border-radius: 20px;
+}
+  
+.payment-form form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+  
+.payment-form form .row .col {
+    flex: 1 1 250px;
+}
+  
+.payment-form form .row .col .title {
+    font-size: 20px;
+    color: black;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+  
+.payment-form form .row .col .InputBox {
+    margin: 10px 0;
+    padding-top: 10px;
+}
+  
+.payment-form form .row .col .InputBox span {
+    margin-bottom: 10px;
+    display: block;
+}
+  
+.payment-form form .row .col .InputBox input {
+    width: 90%;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 5px;
+}
+  
+.payment-form form .row .col .InputBox input:focus {
+    border: 1px solid black;
+}
+  
+.payment-form form .row .col.flex {
+    display: flex;
+    gap: 15px;
+}
+  
+.payment-form form .row .col.flex .InputBox {
+    margin-top: 5px;
+}
+
+.payment-form form .row .col .InputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+#error-message, #email-error-message, #address-message, #city-error, #state-error, #poscode-error, #namecard-error, #cardnum-error, #cvv-error{
+    color: red;
+}
+
+.button{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.button #payNowBtn{
+    background-color: #0a6bff;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 15px 0px 0px 0px;
+    min-height: 56px;
+    min-width: 100%;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button #payNowBtn:hover{
+    background-color: #065dd8;
+    transform: translateY(-2px);
+}
+
+
+
+/*Tablet Version*/
+@media only screen and (max-width: 1024px){
+  .payment-form {
+    padding: 50px 35px;
+    min-height: 100%;
+  }
+
+  .product-details{
+    padding: 40px 35px;
+}
+}
+
+/*Mobile Version*/
+@media only screen and (max-width: 768px){
+  .payment-form {
+    padding: 50px 25px;
+    min-height: 100%;
+  }
+
+  .payment-form form {
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .product-details{
+    padding: 40px 25px;
+}
+}

@@ -1,0 +1,63 @@
+.detail-container {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 0.7rem 1.4rem;
+  background: white;
+  color: black;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  
+
+}
+
+.card,.booking-card {
+  background: linear-gradient(cyan,BLUE);
+  border-radius: 10px;
+  padding: 30px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.anothercard{
+  padding: 0.7rem 1.4rem;
+  background-color: darkcyan;
+  color: white;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  width: 600px;
+  margin-left: 35%;
+  margin-bottom: 50px;
+}
+
+.card h2 ,
+.booking-card h2{
+text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: black;
+  
+}
+
+.container{
+width: 100%;
+min-height: 640px;
+margin-top: 100px;
+position: relative;
+display: flex;
+align-items: center;
+background:rgb(2, 3, 7,0.5);
+}
+
+.booking-card h3 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.booking-card p {
+ color: black;
+}
+
+

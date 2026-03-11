@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="../CSS FILES/login.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="../JS FILES/login_register.js"></script>
+</head>
+<body>
+    <!-- Navbar  -->
+    <header>
+        <a href="#home" class="logo">
+            <i class='bx bxs-movie'></i>Mr.CK
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- menu  -->
+        <ul class="navbar">
+          
+        </ul>
+        
+        <a href="register.html" class="btn">Sign Up</a>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Login Form</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter Your Password">
+                </div>
+                <div class="text-center">
+                    <button type="button" onclick="gohomepage()" class="btn btn-primary" id="home_btn">Continue As Guest</button>
+                </div>
+                <div class="text-center">
+                    <button type="submit" onclick="loginpage()" class="btn btn-primary" id="login_btn">login</button>
+                </div>   
+            </form>
+
+        </div>
+    </div>
+
+
+   
+</body>

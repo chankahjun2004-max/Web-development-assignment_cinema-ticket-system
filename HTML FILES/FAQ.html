@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema FAQ</title>
+    <link rel="stylesheet" href="../CSS FILES/style.css">
+    <link rel="stylesheet" href="../CSS FILES/FAQ.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="../JS FILES/FAQ.js"></script>
+</head>
+<body>
+    <header>
+        <a href="Homepage1.html" class="logo">
+            <i class='bx bxs-movie'></i>Mr.CK</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="Homepage1.html" >Home</a></li>
+            <li><a href="FnB.html">FnB</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="FAQ.html" class="home-active">FAQ</a></li>
+        </ul>
+        <a href="login.html" class="btn">Join Us</a>
+    </header>
+
+    <h1>Cinema Name FAQ</h1>
+    <section id="faq">
+        <h2 onclick="toggleSection('ticket-booking')">Ticket Booking</h2>
+        <div id="ticket-booking" class="faq-section">
+            <h3><b>How do I book tickets online?</b></h3>
+            <p>You can book tickets online through our website or in person at our cinema.</p>
+            <h3><b>Can I cancel or change my booking?</b></h3>
+            <p>You can cancel your bookings a minimum of 3 days before the showing time.</p>
+            <h3><b>Are there any discounts available for bulk or group bookings?</b></h3>
+            <p>We do have discounts available every now and then, be sure to keep your eyes peeled in our social media accounts.</p>
+            <h3><b>How far in advance can I book tickets?</b></h3>
+            <p>You can book tickets up to 30 days in advance.</p>
+
+        </div>
+
+        <h2 onclick="toggleSection('pricing-payment')">Pricing and Payment</h2>
+        <div id="pricing-payment" class="faq-section">
+            <h3><b>What are the ticket prices for adults, children, and seniors?</b></h3>
+            <p>Our tickets prices vary from on Weekdays. Weekends and seating types. Please check our website for the latest prices.</p>
+            <h3><b>Do you offer any membership discounts or loyalty programs?</b></h3>
+            <p>We do have a loyalty program for our customers, you can find more information in our social media accounts.</p>
+            <h3><b>What payment methods are accepted at the cinema and online?</b></h3>
+            <p>We accept all major credit cards and debit cards, as well as PayPal and Apple Pay.</p>
+            <h3><b>Are there any additional fees for online booking?</b></h3>
+            <p>We do not charge any additional fees for online booking.</p>
+        </div>
+
+        <h2 onclick="toggleSection('showtimes-availability')">Showtimes and Availability</h2>
+        <div id="showtimes-availability" class="faq-section">
+            <h3><b>How can I check movie showtimes?</b></h3>
+            <p>You can check via our website and the email we sent you when you confirm your booking</p>
+            <h3><b>What do I do if a show is sold out?</b></h3>
+            <p>You can book a ticket for the next available show.</p>
+            <h3><b>How often do you update your movie listings?</b></h3>
+            <p>We update our movie listings every week.</p>
+        </div>
+
+        <h2 onclick="toggleSection('cinema-facilities')">Cinema Facilities</h2>
+        <div id="cinema-facilities" class="faq-section">
+            <h3><b>What types of screens and seating options are available?</b></h3>
+            <p>We offer a variety of screens including standard, IMAX, and 4DX. Seating options range from regular to premium recliners and VIP seats with additional legroom and comfort.</p>
+            <h3><b>Are your facilities wheelchair accessible?</b></h3>
+            <p>Yes, our cinema is fully accessible to wheelchair users, including accessible restrooms and dedicated seating areas in each theater.</p>
+            <h3><b>Do you provide hearing-impaired services?</b></h3>
+            <p>We provide hearing-impaired services such as subtitled screenings and special headphones upon request.</p>
+            <h3><b>What are the food and drink options at the cinema?</b></h3>
+            <p>Our concession stands offer a range of snacks including popcorn, nachos, hotdogs, as well as a selection of soft drinks, juices, and Mineral Water.</p>
+        </div>
+
+        <h2 onclick="toggleSection('special-screenings')">Special Screenings and Events</h2>
+        <div id="special-screenings" class="faq-section">
+            
+        <h3><b>Do you host special events or movie premieres?</b></h3>
+        <p>Yes, we host special events and movie premieres. Check our website or subscribe to our newsletter for upcoming events.</p>
+        <h3><b>How can I find out about special screenings and events?</b></h3>
+        <p>Information about special screenings and events can be found on our website, social media channels, or by subscribing to our newsletter.</p>
+        <h3><b>Are private screenings available for booking?</b></h3>
+        <p>Private screenings can be booked for special occasions. Please contact our customer service for more details and availability.</p>
+        </div>
+
+        <h2 onclick="toggleSection('policies-safety')">Policies and Safety</h2>
+        <div id="policies-safety" class="faq-section">
+            <h3><b>What is your policy on refunds and exchanges?</b></h3>
+            <p>Refunds and exchanges are available under certain conditions. Please review our refund policy on our website or contact customer service for assistance.</p>
+            <h3><b>What are the cinema's policies regarding children and age restrictions for movies?</b></h3>
+            <p>Age restrictions for movies are in accordance with film rating systems. Children under age 12 must be accompanied by an adult for PG-13 movies.</p>
+            <h3><b>What safety measures are in place at the cinema?</b></h3>
+            <p>We adhere to strict safety protocols including regular cleaning, security checks, and compliance with local health guidelines to ensure our guests' safety.</p>
+        </div>
+
+        <h2 onclick="toggleSection('technology-features')">Technology and Features</h2>
+        <div id="technology-features" class="faq-section">
+            <h3><b>Do you offer 3D and IMAX screenings?</b></h3>
+            <p>Yes, we offer both 3D and IMAX screenings. Check our showtimes for available formats.</p>
+            <h3><b>What are the benefits of watching a movie in IMAX or 3D?</b></h3>
+            <p>IMAX provides an immersive viewing experience with sharper images and superior sound quality, while 3D movies offer a depth perception feature that enhances the visual experience.</p>
+            <h3><b>Are subtitles available for non-English movies or for the hearing impaired?</b></h3>
+            <p>Yes, we provide subtitles for non-English movies and also offer special screenings with subtitles for the hearing impaired.</p>
+            
+        </div>
+
+        <h2 onclick="toggleSection('customer-support')">Customer Support</h2>
+        <div id="customer-support" class="faq-section">
+            <h3><b>How can I contact customer service if I have an issue?</b></h3>
+            <p>Customer service can be contacted via our website's contact form, by phone, or by visiting the customer service desk at our cinema.</p>
+            <h3><b>What are the hours of operation for customer support?</b></h3>
+            <p>Our customer support is available from 10 AM to 10 PM daily.</p>
+            <h3><b>Where can I provide feedback about my experience?</b></h3>
+            <p>Feedback can be provided through our website's feedback form, directly at the cinema, or via our social media pages.</p>
+        </div>
+
+        <h2 onclick="toggleSection('miscellaneous')">Miscellaneous</h2>
+        <div id="miscellaneous" class="faq-section">
+            <h3><b>Can I bring my own food and drinks?</b></h3>
+            <p>No, outside food and drinks are not permitted. However, you can purchase a variety of snacks and beverages at our concession stands.</p>
+            <h3><b>Is there parking available at the cinema? Is it free?</b></h3>
+            <p>Parking is available and free for cinema patrons. The parking lot is monitored for security and convenience.</p>
+            <h3><b>What should I do if I lost an item at the cinema?</b></h3>
+            <p>Please report any lost items to our customer service desk or contact us through our website. We maintain a lost and found section and will do our best to help you recover your item.</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Movie Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

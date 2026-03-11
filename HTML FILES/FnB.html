@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Food and Beverage</title>
+    <link rel="stylesheet" href="../CSS FILES/style.css">
+    <link rel="stylesheet" href="../CSS FILES/F&B.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="../JS FILES/AddToCart.js"></script>
+</head>
+<body>
+    <header>
+        <a href="Homepage1.html" class="logo">
+            <i class='bx bxs-movie'></i>Mr.CK
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="Homepage1.html">Home</a></li>
+            <li><a href="FnB.html" class="home-active">FnB</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+        <a href="login.html" class="btn">Join Us</a>
+
+        <ul class="navbar">
+            <li><a>welcome, <script>document.write(localStorage.getItem("name"));</script></a></li>
+        </ul>
+
+        <div id="cart" onclick="toggleCartDisplay()">Cart (0 items)</div>
+        <div class="cart" id="cartDetails" style="display: none;">
+            <h3>Your Cart:</h3>
+            <div id="cartItems"></div>
+            <div id="subtotalDisplay">Subtotal: $0.00</div>
+            <div id="taxDisplay">Tax: $0.00</div>
+            <div id="totalDisplay">Total: $0.00</div>
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </header>
+
+    <h1>Food & Beverage</h1>
+    <h2>Menu</h2>
+    <section class="food-menu">
+        <div class="menu-item">
+            <h3>Salted Popcorn</h3>
+            <img src="../IMAGES/Salted.jpg" alt="Salted Popcorn" height="300" width="300" usemap="#salted-popcorn-map">
+            <p>Freshly popped corn kernels seasoned with salt.</p>
+            <map name="salted-popcorn-map">
+                <area shape="rect" coords="0,0,300,300" alt="Salted Popcorn" href="javascript:void(0)" onclick="addToCart('Salted Popcorn', 10.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Caramel Popcorn</h3>
+            <img src="../IMAGES/Caramel.jpg" alt="Caramel Popcorn" height="300" width="300" usemap="#caramel-popcorn-map">
+            <p>Freshly popped corn kernels seasoned with caramel dressing, to make them as sweet as you <3.</p>
+            <map name="caramel-popcorn-map">
+                <area shape="rect" coords="0,0,300,300" alt="Caramel Popcorn" href="javascript:void(0)" onclick="addToCart('Caramel Popcorn', 15.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Mixed Popcorn</h3>
+            <img src="../IMAGES/Mixed.jpg" alt="Mixed Popcorn" height="300" width="300" usemap="#mixed-popcorn-map">
+            <p>Freshly popped corn kernels salted and seasoned with caramel dressing.</p>
+            <map name="mixed-popcorn-map">
+                <area shape="rect" coords="0,0,300,300" alt="Mixed Popcorn" href="javascript:void(0)" onclick="addToCart('Mixed Popcorn', 20.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Nachos</h3>
+            <img src="../IMAGES/Nachos.jpg" alt="Nachos" height="300" width="300" usemap="#nachos-map">
+            <p>Crispy tortilla chips topped with melted cheese, jalapenos, and salsa.</p>
+            <map name="nachos-map">
+                <area shape="rect" coords="0,0,300,300" alt="Nachos" href="javascript:void(0)" onclick="addToCart('Nachos', 15.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Nuggies</h3>
+            <img src="../IMAGES/Nuggies.jpg" alt="Nuggets" height="300" width="300" usemap="#nuggies-map">
+            <p>Bite sized meat chunks served with ketchup/chili in both beef and chicken options.</p>
+            <map name="nuggies-map">
+                <area shape="rect" coords="0,0,300,300" alt="Nuggets" href="javascript:void(0)" onclick="addToCart('Nuggies', 15.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Patato Chipz</h3>
+            <img src="../IMAGES/Patato.jpg" alt="Potato Chips" height="300" width="300" usemap="#patato-chipz-map">
+            <p>Salted Potato Chips.</p>
+            <map name="patato-chipz-map">
+                <area shape="rect" coords="0,0,300,300" alt="Potato Chips" href="javascript:void(0)" onclick="addToCart('Patato Chipz', 5.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>French Fries</h3>
+            <img src="../IMAGES/FrenchFries.jpg" alt="French Fries" height="300" width="300" usemap="#french-fries-map">
+            <p>Deep fried potato served ala the way of the French.</p>
+            <map name="french-fries-map">
+                <area shape="rect" coords="0,0,300,300" alt="French Fries" href="javascript:void(0)" onclick="addToCart('French Fries', 10.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Borgar</h3>
+            <img src="../IMAGES/Borgar.jpg" alt="Burger" height="300" width="300" usemap="#borgar-map">
+            <p>Hamburger served with lettuce, tomato, and relish in between brioche buns with your choice of a beef or chicken patty.</p>
+            <map name="borgar-map">
+                <area shape="rect" coords="0,0,300,300" alt="Burger" href="javascript:void(0)" onclick="addToCart('Borgar', 20.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Hotdawg</h3>
+            <img src="../IMAGES/Hot Dawg.jpg" alt="Hotdog" height="300" width="300" usemap="#hotdawg-map">
+            <p>Grilled Sausage with our homemade D sauce and vegetables served in a hot dog bun.</p>
+            <map name="hotdawg-map">
+                <area shape="rect" coords="0,0,300,300" alt="Hotdog" href="javascript:void(0)" onclick="addToCart('Hotdawg', 15.00)">
+            </map>
+        </div>
+    </section>
+
+    <h2>Beverages</h2>
+    <section class="food-menu">
+        <div class="menu-item">
+            <h3>Soda</h3>
+            <img src="../IMAGES/Soda.jpg" alt="Soda" height="200" width="200" usemap="#soda-map">
+            <p>A variety of carbonated soft drinks.</p>
+            <map name="soda-map">
+                <area shape="rect" coords="0,0,200,200" alt="Soda" href="javascript:void(0)" onclick="addToCart('Soda', 5.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>MLo</h3>
+            <img src="../IMAGES/MLo.jpg" alt="MLo" height="200" width="200" usemap="#mlo-map">
+            <p>Chocolate-flavoured malted powder drink.</p>
+            <map name="mlo-map">
+                <area shape="rect" coords="0,0,200,200" alt="MLo" href="javascript:void(0)" onclick="addToCart('MLo', 7.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Juice</h3>
+            <img src="../IMAGES/Juice.jpg" alt="Juice" height="200" width="200" usemap="#juice-map">
+            <p>A variety of juices ranging from Minute Maid's pulpy orange to Lemonade.</p>
+            <map name="juice-map">
+                <area shape="rect" coords="0,0,200,200" alt="Juice" href="javascript:void(0)" onclick="addToCart('Juice', 5.00)">
+            </map>
+        </div>
+        <div class="menu-item">
+            <h3>Botta Of Watta</h3>
+            <img src="../IMAGES/Botta of Watta.jpg" alt="Mineral Water" height="200" width="200" usemap="#botta-of-watta-map">
+            <p>London's Prime Mineral Water.</p>
+            <map name="botta-of-watta-map">
+                <area shape="rect" coords="0,0,200,200" alt="Mineral Water" href="javascript:void(0)" onclick="addToCart('Botta Of Watta', 3.00)">
+            </map>
+        </div>
+    </section>
+
+    <h2>Special Deals</h2>
+    <section class="special-offers">
+        <div class="offer">
+            <h3>Combo Deals</h3>
+            <img src="../IMAGES/ComboDeals.jpg" alt="Popcorn and Drinks" height="350" width="350" usemap="#combo-deals-map">
+            <p>Get two popcorns and a Soda together for a discounted price.</p>
+            <map name="combo-deals-map">
+                <area shape="rect" coords="0,0,350,350" alt="Combo Deals" href="javascript:void(0)" onclick="addToCart('Combo Deals', 20.00)">
+            </map>
+        </div>
+        <div class="offer">
+            <h3>Artist Special</h3>
+            <img src="../IMAGES/Artist.jpg" alt="Joko Widodo" height="350" width="350" usemap="#artist-special-map">
+            <p>Buy any popcorn and get a free signed photograph of singer Joko Widodo</p>
+            <map name="artist-special-map">
+                <area shape="rect" coords="0,0,350,350" alt="Artist Special" href="javascript:void(0)" onclick="addToCart('Artist Special', 30.00)">
+            </map>
+        </div>
+        <div class="offer">
+            <h3>Couples Combo</h3>
+            <img src="../IMAGES/CoupleCombo.jpg" alt="CoupleCombo" height="350" width="350" usemap="#couples-combo-map">
+            <p>Bring a mate and enjoy 3 Popcorns for the price of one. Or bring a monkey, we don't judge!</p>
+            <map name="couples-combo-map">
+                <area shape="rect" coords="0,0,350,350" alt="Couples Combo" href="javascript:void(0)" onclick="addToCart('Couples Combo', 25.00)">
+            </map>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us for any queries or feedback.</p>
+    </footer>
+</body>
+</html>

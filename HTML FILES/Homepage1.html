@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="../CSS FILES/style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Navbar  -->
+    <header>
+        <a href="Homepage1.html" class="logo">
+            <i class='bx bxs-movie'></i>Mr.CK
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="Homepage1.html" class="home-active">Home</a></li>
+            <li><a href="FnB.html" >FnB</a></li>
+            <li><a href="about_us.html" >About Us</a></li>
+            <li><a href="profile.html" >Profile</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+        <a href="login.html" class="btn">Join Us</a>
+
+        <ul class="navbar">
+            <li><a>Welcome <script>document.write(localStorage.getItem("name"));</script></a></li>
+        </ul>
+
+    </header>
+
+    <!-- Home  -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="../IMAGES/exhuma.jpg"alt="Exhuma">
+                <div class="home-text">
+                    <h1>Exhuma</h1>
+                    <a href="" class="btn">Book Now</a>    
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="../IMAGES/GxK-website-wide.jpg" alt="Godzilla x Kong">
+                <div class="home-text">
+                    <h1>Godzilla x Kong <br>The New Empire</h1>
+                    <a href="" class="btn">Book Now</a>    
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="../IMAGES/kfpanda.jpg" alt="kongfu panda 4">
+                <div class="home-text">
+                    <h1>Kongfu Panda 4<br></h1>
+                    <a href="" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="../IMAGES/yolo.jpeg" alt="Yolo">
+                <div class="home-text">                  
+                    <h1>Yolo<br></h1>
+                    <a href="" class="btn">Book Now</a> 
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="../IMAGES/avengers.png" alt="Avenger:End game">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Avengers: <br>End Game</h1>
+                    <a href="" class="btn">Book Now</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Movies  -->
+    <div class="movies" id="movies">
+        <h2 class="heading">Opening This Week</h2>
+        <!-- Movies container  -->
+        <div class="movies-container">
+            <!-- box-1  -->
+            <div class="box">
+                <div class="box-img play-container">
+                    <img src="../IMAGES/exhuma.jpg" alt="">
+                    <video class="video" src="../movie/Trailer/exhuma.mp4" loop ></video>
+                    <div class="play-overlay"></div>
+                    <div class="play-btn">
+                        <i class="bx bx-play"></i>
+                    </div>
+                </div>
+                <h3>Exhuma</h3>
+                <span>2h 14min | Thriller/Suspense</span>
+                
+            
+            </div>
+            <a href="../movie/exhuma/exhuma.html?exhuma" class="btn">More Info</a> <!--link put here aa bro-->
+
+            <!-- box-2  -->
+            <div class="box">
+                <div class="box-img play-container">
+                    <img src="../IMAGES/GxK-website-wide.jpg" alt="gxk">
+                    <video class="video" src="../VIDEOS/Godzilla x Kong _ The New Empire _ Official Trailer (720p).mp4" loop ></video>
+                    <div class="play-overlay"></div>
+                    <div class="play-btn">
+                        <i class="bx bx-play"></i>
+                    </div>
+                </div>
+                <h3>Godzilla x Kong: The New Empire</h3>
+                <span>1h 55min | Action/Sci-Fi</span>
+            </div>
+            <a href="../movie/GxK/gxk.html?gxk" class="btn">More Info</a> <!--link put here aa bro-->
+
+            <!-- box-3  -->
+            <div class="box">
+                <div class="box-img play-container">
+                    <img src="../IMAGES/kfpanda.jpg" alt="kong fu panda 4">
+                    <video class="video" src="../movie/Trailer/kfpanda.mp4" loop ></video>
+                    <div class="play-overlay"></div>
+                    <div class="play-btn">
+                        <i class="bx bx-play"></i>
+                    </div>
+                </div>
+                <h3>KONG FU PANDA 4</h3>                
+                <span>1h 34min | Animation</span>
+            </div>
+            <a href="../movie/kfpanda/kfpanda.html?kfpanda" class="btn">More Info</a> <!--link put here aa bro-->
+            <!-- box-4  -->
+            <div class="box">
+                <div class="box-img play-container">
+                    <img src="../IMAGES/yolo.jpeg" alt="Yolo">
+                    <video class="video" src="../movie/Trailer/yolo.mp4" loop ></video>
+                    <div class="play-overlay"></div>
+                    <div class="play-btn">
+                        <i class="bx bx-play"></i>
+                    </div>
+                </div>
+                <h3>Yolo</h3>
+                <span>2h 10min | Comedy Drama</span>
+            </div>
+            <a href="../movie/Yolo/Yolo.html?yolo" class="btn">More Info</a> <!--link put here aa bro-->
+            
+            <!-- box-5  -->
+            <div class="box">
+                <div class="box-img play-container">
+                    <img src="../IMAGES/avengers.png" alt="avenger: end game">
+                    <video class="video" src="../movie/Trailer/avenger.mp4" loop ></video>
+                    <div class="play-overlay"></div>
+                    <div class="play-btn">
+                        <i class="bx bx-play"></i>
+                    </div>
+                </div>
+                <h3>Avengers: Endgame</h3>
+                <span>3h 2min | Action/Sci-fi</span>
+            </div>
+            <a href="../movie/avenger/avenger.html?avenger" class="btn">More Info</a> <!--link put here aa bro-->
+        </div>
+    </div>
+
+    <!-- coming  -->
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <!-- coming contanier  -->
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                <!-- box-1  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../IMAGES/antman.jpg" alt="">
+                    </div>
+                    <h3>Ant-Man and the Wasp: Quantumania</h3>
+                </div>
+                <!-- box-2  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../IMAGES/flash.jpg" alt="">
+                    </div>
+                    <h3>The Flash</h3>
+                </div>
+                <!-- box-3  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../IMAGES/guardian.jpg" alt="">
+                    </div>
+                    <h3>Guardians of the Galaxy Vol.3</h3>
+                </div>
+                <!-- box-4  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../IMAGES/shazam.jpg" alt="">
+                    </div>
+                    <h3>Shazam! Fury of the Gods</h3>
+                </div>
+                <!-- box-5  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../IMAGES/uncharted.jpg" alt="">
+                    </div>
+                    <h3>Uncharted</h3>
+                </div>
+                <!-- box-6  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../IMAGES/johnwick.jpg" alt="">
+                    </div>
+                    <h3>John Wick:Chapter 4</h3>
+                </div>
+                <!-- box-7 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../IMAGES/transformer.jpg" alt="">
+                    </div>
+                    <h3>Transformer rise of the beasts</h3>
+                </div>
+                <!-- box-8  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../IMAGES/mission.jpg" alt="">
+                    </div>
+                    <h3>Mission: Impossible 7</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Get all play containers
+        const playContainers = document.querySelectorAll('.play-container');
+
+        // Loop through each play container
+        playContainers.forEach(container => {
+            const video = container.querySelector('.video');
+            const playBtn = container.querySelector('.play-btn');
+            const playOverlay = container.querySelector('.play-overlay');
+
+            // Play video on mouseenter
+            container.addEventListener('mouseenter', () => {
+                video.play();
+                playOverlay.style.opacity = '0';
+            });
+
+            // Pause video on mouseleave
+            container.addEventListener('mouseleave', () => {
+                video.pause();
+                playOverlay.style.opacity = '1';
+            });
+        });
+    </script>
+
+    <!-- footer  -->
+    <section class="footer">
+        <a href="" class="logo">
+            <i class="bx bxs-movie"></i>Mr.CK
+        </a>
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../JS FILES/main.js"></script>
+</body>
+</html>

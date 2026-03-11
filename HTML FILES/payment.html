@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="../CSS FILES/payment.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+        
+    
+        
+    <div class="container"> <!-- added container element -->
+        <main>
+            <section class="movie-section">
+                <h2>Movie Tickets</h2>
+                <ul id="movie-tickets"></ul>
+            </section>
+            <section class="food-beverage-section">
+                <h2>Food & Beverage</h2>
+                <ul id="food-items"></ul>
+                <p id="food-subtotal">Subtotal: $0.00</p>
+                <p>tax 8%</p>
+            </section>
+        
+            <p id="total">Total: $0.00</p>
+            <label for="pmethods">Select a Payment Method</label>
+            <select id="pmethods" name="pmethods" required>
+                <option value="">-- Please select --</option>
+                <option value="TNGO EWALLET">TNGO EWALLET</option>
+                <option value="Online Banking">Online Banking</option>
+                <option value="Debit/Credit Card">Debit/Credit Card</option>
+            </select>
+            <button id="confirmPaymentButton" disabled>Confirm Payment</button>
+        </main>
+    </div> <!-- closed container element -->
+    
+    <script src="../JS FILES/payment.js"></script>
+</body>
+</html>
